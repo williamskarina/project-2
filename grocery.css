@@ -22,11 +22,6 @@ body {
     font-family: fantasy;
     letter-spacing: 20px;
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
 
 .menu{
     background: #184d47;

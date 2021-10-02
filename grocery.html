@@ -7,20 +7,7 @@
 <Meta Name = "Description" Content="">
 <link rel="stylesheet" href="grocery.css"/>
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-<script>
-    function stickyMenu() {
-        var sticky=document.getElementById('sticky');
-        if(window.pageYOffset > 220) {
-            sticky.classList.add('sticky');
-        }
-        else {
-            sticky.classList.remove('sticky');
-        }
-    }
-    window.onscroll = function() {
-        stickyMenu();
-    }
-</script>
+<script type="text/javascript" src="grocery.js"></script>
 </head>
 
 <body>
@@ -69,7 +56,7 @@
             <div class="parallax">
                 <div class="title">VEGETABLES</div>
             </div>
-            <div class="items">
+            <div class="items" id="item1">
                 <div class="images">
                     <img src="./images/okra.jpg" class="item-image-size"/>
                 </div>
@@ -85,9 +72,10 @@
                         <option>3lb</option>
                         <option>4lb</option>
                     </select><br/>
-                    <button class="buynow-btn">Buy Now</button>
+                    <button onClick="addtoCart(item1)">Add to Cart</button>
                 </div>
-            <div class="items">
+            </div>
+            <div class="items" id="item2">
                     <div class="images">
                         <img src="./images/broccoli.jpg" class="item-image-size"/>
                     </div>
@@ -103,8 +91,9 @@
                             <option>3lb</option>
                             <option>4lb</option>
                         </select><br/>
-                        <button class="buynow-btn">Buy Now</button>
+                        <button onClick="addtoCart(item2)">Add to Cart</button>
                     </div>
+            </div>
             <div class="items">
                         <div class="images">
                             <img src="./images/kale.jpg" class="item-image-size"/>
@@ -121,8 +110,9 @@
                                 <option>3lb</option>
                                 <option>4lb</option>
                             </select><br/>
-                            <button class="buynow-btn">Buy Now</button>
+                            <button class="buynow-btn">Add to Cart</button>
                         </div>
+            </div>
             <div class="items">
                             <div class="images">
                                 <img src="./images/asparagus.jpg" class="item-image-size"/>
@@ -139,7 +129,7 @@
                                     <option>3lb</option>
                                     <option>4lb</option>
                                 </select><br/>
-                                <button class="buynow-btn">Buy Now</button>
+                                <button class="buynow-btn">Add to Cart</button>
                             </div>
             </div>
         </div>
@@ -165,8 +155,9 @@
                     <option>3lb</option>
                     <option>4lb</option>
                 </select><br/>
-                <button class="buynow-btn">Buy Now</button>
+                <button class="buynow-btn">Add to Cart</button>
             </div>
+        </div>
         <div class="items">
                 <div class="images">
                     <img src="./images/kiwi.jpg" class="item-image-size"/>
@@ -183,8 +174,9 @@
                         <option>3lb</option>
                         <option>4lb</option>
                     </select><br/>
-                    <button class="buynow-btn">Buy Now</button>
+                    <button class="buynow-btn">Add to Cart</button>
                 </div>
+        </div>
         <div class="items">
                     <div class="images">
                         <img src="./images/orange.jpg" class="item-image-size"/>
@@ -201,8 +193,9 @@
                             <option>3lb</option>
                             <option>4lb</option>
                         </select><br/>
-                        <button class="buynow-btn">Buy Now</button>
+                        <button class="buynow-btn">Add to Cart</button>
                     </div>
+        </div>
         <div class="items">
                         <div class="images">
                             <img src="./images/apple.jpg" class="item-image-size"/>
@@ -219,8 +212,9 @@
                                 <option>3lb</option>
                                 <option>4lb</option>
                             </select><br/>
-                            <button class="buynow-btn">Buy Now</button>
+                            <button class="buynow-btn">Add to Cart</button>
                         </div>
+        </div>
         </div>
     </div>
 <!-- Fruits Ends Here -->
@@ -245,8 +239,9 @@
                 <option>3lb</option>
                 <option>4lb</option>
             </select><br/>
-            <button class="buynow-btn">Buy Now</button>
+            <button class="buynow-btn">Add to Cart</button>
         </div>
+    </div>
     <div class="items">
             <div class="images">
                 <img src="./images/chicken.jpg" class="item-image-size"/>
@@ -263,8 +258,9 @@
                     <option>3lb</option>
                     <option>4lb</option>
                 </select><br/>
-                <button class="buynow-btn">Buy Now</button>
+                <button class="buynow-btn">Add to Cart</button>
             </div>
+    </div>
     <div class="items">
                 <div class="images">
                     <img src="./images/lamb.jpg" class="item-image-size"/>
@@ -281,8 +277,9 @@
                         <option>3lb</option>
                         <option>4lb</option>
                     </select><br/>
-                    <button class="buynow-btn">Buy Now</button>
+                    <button class="buynow-btn">Add to Cart</button>
                 </div>
+    </div>
     <div class="items">
                     <div class="images">
                         <img src="./images/ham.jpg" class="item-image-size"/>
@@ -299,8 +296,9 @@
                             <option>3lb</option>
                             <option>4lb</option>
                         </select><br/>
-                        <button class="buynow-btn">Buy Now</button>
+                        <button class="buynow-btn">Add to Cart</button>
                     </div>
+    </div>
     </div>
 </div>
 <!-- Meat Ends Here -->
