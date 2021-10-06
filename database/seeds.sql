@@ -7,19 +7,19 @@ VALUES ("Fruits");
 INSERT INTO department (name)
 VALUES ("Meats");
 
-INSERT INTO Vegetables 
+INSERT INTO Vegetables (name)
 VALUES ("Broccoli"),
        ("Asparagus"),
        ("Kale"),
        ("Okra");
 
-INSERT INTO Fruits 
+INSERT INTO Fruits(name)
 VALUES ("Orange"),
        ("Apple"),
        ("Kiwi"),
        ("Strawberry");
 
-INSERT INTO Meats 
+INSERT INTO Meats (name)
 VALUES ("Ham"),
        ("Lamb"),
        ("Steak"),
