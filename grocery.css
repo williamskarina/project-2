@@ -22,11 +22,6 @@ body {
     font-family: fantasy;
     letter-spacing: 20px;
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
 
 .menu{
     background: #184d47;
@@ -97,7 +92,7 @@ button{
     text-align:center;
 }
 
-.categories, .items{
+.categories, .shop-items{
     width:max-content;
     margin:25px;
     border:1px solid #184d47;
@@ -139,7 +134,7 @@ a{
     display:inline-block; 
 }
 
-.item-image-size{
+.shop-item-image{
     height:200px;
     width:300;
     padding:5px;
