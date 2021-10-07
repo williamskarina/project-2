@@ -1,0 +1,29 @@
+DROP DATABASE IF EXISTS groceriesdb;
+
+CREATE DATABASE groceriesdb;
+
+USE groceriesdb;
+
+CREATE TABLE department (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(30) NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE Vegetables (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(30) NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE Fruits (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(30) NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE Meats (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(30) NULL,
+    PRIMARY KEY (id)
+);
