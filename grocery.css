@@ -48,8 +48,9 @@ body {
 }
 
 .menu-ul li:hover {
-    background: #5b8c5a;
+    background: #5b8c5abd;
     transform: scale(1.1);
+    border-radius: 8px;
 }
 
 .search-box{
@@ -84,6 +85,13 @@ button{
     background:transparent;
     border:none;
     outline:none;
+    color: white;
+}
+
+button:hover {
+    background: #5b8c5abd;
+    transform: scale(1.1);
+    border-radius: 8px;
 }
 
 .container {
@@ -140,6 +148,30 @@ a{
     padding:5px;
 }
 
+.shop-item-title, .shop-item-price{
+    margin-left: 20px;
+}
+.shop-item-button {
+    margin-left: 30px;
+    border:1px solid #184d47;
+    background: #184d47;
+    padding:5px 15px;
+    border-radius: 20px;
+    padding: 5px;
+    font-weight:bold;
+    color:white;
+}
+
+.shop-item-button:hover{
+    border:1px solid #5b8c5a;
+    box-shadow:0 0 10px 5px #5b8c5a inset;
+}
+
+
+
+
+
+
 .description{
     margin:20px;
     min-height:100px;
@@ -149,17 +181,18 @@ a{
     margin:10px 0 0 0;
 }
 
-.buynow-btn{
+.btn-purchase{
     border:1px solid #184d47;
     background: #184d47;
     padding:5px 15px;
     border-radius: 20px;
+    padding: 10px;
     font-weight:bold;
     margin-top:10px;
     color:white;
 }
 
-.buynow-btn:hover{
+.btn-purchase:hover{
     border:1px solid #5b8c5a;
     box-shadow:0 0 10px 5px #5b8c5a inset;
 }
@@ -202,3 +235,9 @@ a{
     text-align:center;
     margin:15px;
 }
+
+/*------slider-animation starts here--------*/
+
+
+
+
