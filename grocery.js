@@ -4,6 +4,8 @@ if (document.readyState == 'loading') {
     ready()
 }
 
+var cart = []
+
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
     for (var i = 0; i < removeCartItemButtons.length; i++) {
@@ -55,6 +57,10 @@ function addToCartClicked(event) {
     var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
     var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
     var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+    cart.push({
+        title, price, imageSrc
+    })
+    localStorage.setItem("cart", JSON.stringify (cart))
     addItemToCart(title, price, imageSrc)
     updateCartTotal()
 }
@@ -100,4 +106,8 @@ function updateCartTotal() {
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+}
+
+function purchase () {
+    var checkout = purchase.getElementsByClassName('btn').addEventListener('click')
 }
