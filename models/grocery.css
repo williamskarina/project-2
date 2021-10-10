@@ -149,9 +149,9 @@ a{
     margin:10px 0 0 0;
 }
 
-.buynow-btn{
-    border:1px solid #184d47;
-    background: #184d47;
+.shop-item-button {
+    border:1px solid #1a5851;
+    background: #288075d5;
     padding:5px 15px;
     border-radius: 20px;
     font-weight:bold;
@@ -159,9 +159,26 @@ a{
     color:white;
 }
 
-.buynow-btn:hover{
+.shop-item-button:hover {
     border:1px solid #5b8c5a;
-    box-shadow:0 0 10px 5px #5b8c5a inset;
+    box-shadow:0 0 10px 5px #4d774c inset;
+}
+
+
+
+.btn-purchase{
+    border:1px solid #1a5851;
+    background: #288075d5;
+    padding:5px 15px;
+    border-radius: 20px;
+    font-weight:bold;
+    margin-top:10px;
+    color:white;
+}
+
+.btn-purchase:hover{
+    border:1px solid #5b8c5a;
+    box-shadow:0 0 10px 5px #4d774c inset;
 }
 
 .parallax1 {

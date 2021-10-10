@@ -1,0 +1,51 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1580391536506-a2864b8dae29?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njd8fGZyZXNoJTIwcHJvZHVjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+
+  h1 {
+      color: rgb(39, 39, 39);
+      margin-left: 150px;
+      margin-top: 150px;
+      font-size: 40px;
+
+  }
+ h2 {
+    color: rgb(39, 39, 39);
+    margin-left: 30px;
+    
+
+ }
+
+
+  .card {
+      height: 450px;
+      width: 650px;
+      background-color: rgba(255, 255, 255, 0.418);
+      border: 1px solid gainsboro;
+      border-radius: 25px 25px;
+      margin-left: 300px;
+      margin-top: 100px;
+  }
+  .card:hover{
+    background-color: rgba(255, 255, 255, 0.555);
+
+  }
+
+  .btn {
+   
+      margin-left: 250px;
+      background-color: rgba(59, 59, 59, 0.479);
+      font-size: 25px;
+      padding: 10px;
+      border:1px solid black;
+      border-radius:5px ;
+  }
+
+  .btn:hover {
+    background-color: rgba(71, 71, 71, 0.479);
+    transition: 0.3ms;
+  }
